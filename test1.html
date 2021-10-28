@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bruna C Santos</title>
+  <meta name="description" content="Personal page of Bruna C Santos">
+
+</head>
+
+<body>
+
+<div><input id="input1"></div>
+<div><input id="input2"></div>
+
+<div><button onclick="execute()">Sum</button></div>
+
+<p id="result"></p>
+
+<script type="text/javascript">
+
+    function execute() {
+        let input1 = document.getElementById('input1');
+        let input2 = document.getElementById('input2');
+
+        let sum = parseInt(input1.value) + parseInt(input2.value);
+
+        let p = document.getElementById('result');
+        p.innerHTML = 'Sum = ' + sum;
+    }
+
+</script>
+
+</body>
+</html>
